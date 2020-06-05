@@ -24,37 +24,74 @@ namespace TennisGame.Tests
 
         public string Score()
         {
-            if(_firstPlayerScore != _secondPlayerScore)
+            if (_firstPlayerScore != _secondPlayerScore)
             {
-                if (_firstPlayerScore > 3 || _secondPlayerScore > 3)
+                if (IsAnyScoreGreaterThan3())
                 {
-                    if (Math.Abs(_firstPlayerScore - _secondPlayerScore) == 1)
+                    if (IsAdvantage())
                     {
-                        if(_firstPlayerScore > _secondPlayerScore)
-                        {
-                            return $"{_firstPlayer} Adv";
-                        }
-                        else
-                        {
-                            return $"{_secondPlayer} Adv";
-                        }                                                          
+                        return GetAdvantage();
                     }
-                    if (_firstPlayerScore > _secondPlayerScore)
-                    {
-                        return $"{_firstPlayer} Win";
-                    }
-                    else
-                    {
-                        return $"{_secondPlayer} Win";
-                    }
-                }          
-                return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
+                    return GetWinner();
+                }
+                return GetNormalScore(_lookupDictionary);
             }
-            if(_firstPlayerScore >= 3)
+
+            return IsDeuce() ? GetDeuce() : GetAll(_lookupDictionary);
+        }
+
+        private string GetNormalScore(Dictionary<int, string> lookupDictionary)
+        {
+            return $"{lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
+        }
+
+        private bool IsAnyScoreGreaterThan3()
+        {
+            return _firstPlayerScore > 3 || _secondPlayerScore > 3;
+        }
+
+        private string GetAdvantage()
+        {
+            if (_firstPlayerScore > _secondPlayerScore)
             {
-                return "Deuce";
+                return $"{_firstPlayer} Adv";
             }
-            return $"{_lookupDictionary[_firstPlayerScore]} All";
+            else
+            {
+                return $"{_secondPlayer} Adv";
+            }
+        }
+
+        private bool IsAdvantage()
+        {
+            return Math.Abs(_firstPlayerScore - _secondPlayerScore) == 1;
+        }
+
+        private string GetWinner()
+        {
+            if (_firstPlayerScore > _secondPlayerScore)
+            {
+                return $"{_firstPlayer} Win";
+            }
+            else
+            {
+                return $"{_secondPlayer} Win";
+            }
+        }
+
+        private string GetAll(Dictionary<int, string> lookupDictionary)
+        {
+            return $"{lookupDictionary[_firstPlayerScore]} All";
+        }
+
+        private string GetDeuce()
+        {
+            return "Deuce";
+        }
+
+        private bool IsDeuce()
+        {
+            return _firstPlayerScore >= 3;
         }
 
         public void FirstPlayerScore()
