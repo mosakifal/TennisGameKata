@@ -7,25 +7,30 @@ namespace TennisGame.Tests
     public class TennisGame
     {
         private int _firstPlayerScore;
+        private int _secondPlayerScore;
+
+        protected internal Dictionary<int, string> _lookupDictionary = new Dictionary<int, string>()
+        {
+            {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}, {3, "Forty"}
+        };
 
         public string Score()
         {
-            var lookupDictionary = new Dictionary<int, string>()
+            if(_firstPlayerScore != _secondPlayerScore)
             {
-                {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}, {3, "Forty"}
-            };
-
-            if(_firstPlayerScore > 0)
-            {
-                return $"{lookupDictionary[_firstPlayerScore]} Love";
+                return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
             }
-
             return "Love All";
         }
 
         public void FirstPlayerScore()
         {
             _firstPlayerScore++;
+        }
+
+        public void SecondPlayerScore()
+        {
+            _secondPlayerScore++;
         }
     }
 }
