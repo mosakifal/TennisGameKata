@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace TennisGame.Tests
+namespace TennisGame
 {
-    public class TennisGame
+    public class TennisGame : ITennisGame
     {
         private int _firstPlayerScore;
         private int _secondPlayerScore;
