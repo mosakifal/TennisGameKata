@@ -1,0 +1,15 @@
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\bin\Debug\netstandard2.0\TennisGame.deps.json
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\bin\Debug\netstandard2.0\TennisGame.dll
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\bin\Debug\netstandard2.0\TennisGame.pdb
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\obj\Debug\netstandard2.0\TennisGame.csprojAssemblyReference.cache
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\obj\Debug\netstandard2.0\TennisGame.AssemblyInfoInputs.cache
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\obj\Debug\netstandard2.0\TennisGame.AssemblyInfo.cs
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\obj\Debug\netstandard2.0\TennisGame.dll
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame.Tests\TennisGame\obj\Debug\netstandard2.0\TennisGame.pdb
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\bin\Debug\netstandard2.0\TennisGame.deps.json
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\bin\Debug\netstandard2.0\TennisGame.dll
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\bin\Debug\netstandard2.0\TennisGame.pdb
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.AssemblyInfoInputs.cache
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.AssemblyInfo.cs
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.dll
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.pdb
