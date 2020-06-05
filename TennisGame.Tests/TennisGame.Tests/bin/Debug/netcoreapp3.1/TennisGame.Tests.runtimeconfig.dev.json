@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mosak\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mosak\\.nuget\\packages"
+    ]
+  }
+}
