@@ -101,5 +101,13 @@ namespace TennisGame.Tests
             GiveSecondPlayerScore(3);
             ScoreShouldbe("Mo Adv");
         }
+
+        [TestMethod]
+        public void TennisGame_Returns_SecondPlayer_Adv()
+        {
+            GiveFirstPlayerScore(3);
+            GiveSecondPlayerScore(4);
+            ScoreShouldbe("James Adv");
+        }
     }
 }

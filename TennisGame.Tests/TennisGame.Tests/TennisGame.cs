@@ -26,11 +26,18 @@ namespace TennisGame.Tests
         {
             if(_firstPlayerScore != _secondPlayerScore)
             {
-                if (_firstPlayerScore > 3)
+                if (_firstPlayerScore > 3 || _secondPlayerScore > 3)
                 {
-                    if (_firstPlayerScore - _secondPlayerScore == 1)
+                    if (Math.Abs(_firstPlayerScore - _secondPlayerScore) == 1)
                     {
-                        return $"{_firstPlayer} Adv";
+                        if(_firstPlayerScore > _secondPlayerScore)
+                        {
+                            return $"{_firstPlayer} Adv";
+                        }
+                        else
+                        {
+                            return $"{_secondPlayer} Adv";
+                        }                                                          
                     }
                 }          
                 return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
