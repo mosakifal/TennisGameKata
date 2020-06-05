@@ -85,5 +85,13 @@ namespace TennisGame.Tests
             GiveSecondPlayerScore(2);
             ScoreShouldbe("Thirty All");
         }
+
+        [TestMethod]
+        public void TennisGame_Returns_Deuce()
+        {
+            GiveFirstPlayerScore(3);
+            GiveSecondPlayerScore(3);
+            ScoreShouldbe("Deuce");
+        }
     }
 }

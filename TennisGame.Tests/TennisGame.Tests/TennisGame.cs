@@ -20,6 +20,10 @@ namespace TennisGame.Tests
             {
                 return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
             }
+            if(_firstPlayerScore >= 3)
+            {
+                return "Deuce";
+            }
             return $"{_lookupDictionary[_firstPlayerScore]} All";
         }
 
