@@ -5,14 +5,24 @@ namespace TennisGame.Tests
     [TestClass]
     public class TennisGameScoreTests
     {
+        protected internal TennisGame _tennisGame = new TennisGame();
+
         [TestMethod]
         public void TennisGame_Returns_Love_All()
         {
-            var tennisGame = new TennisGame();
+            ScoreShouldbe("Love All");
+        }
 
-            var score = tennisGame.Score();
+        private void ScoreShouldbe(string lookup)
+        {
+            Assert.AreEqual(lookup, _tennisGame.Score());
+        }
 
-            Assert.AreEqual("Love All", score);
+        [TestMethod]
+        public void TennisGame_Returns_Fifteen_Love()
+        {
+            _tennisGame.FirstPlayerScore();
+            Assert.AreEqual("Fiften Love", _tennisGame.Score());
         }
     }
 }
