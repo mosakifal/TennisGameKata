@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace TennisGame.Tests
 {
@@ -28,9 +29,23 @@ namespace TennisGame.Tests
         [TestMethod]
         public void TennisGame_Returns_Thirty_Love()
         {
-            _tennisGame.FirstPlayerScore();
-            _tennisGame.FirstPlayerScore();
+            GiveFirstPlayerScore(2);
             ScoreShouldbe("Thirty Love");
+        }
+
+        private void GiveFirstPlayerScore(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                _tennisGame.FirstPlayerScore();
+            }
+        }
+
+        [TestMethod]
+        public void TennisGame_Returns_Forty_Love()
+        {
+            GiveFirstPlayerScore(3);
+            ScoreShouldbe("Forty Love");
         }
     }
 }

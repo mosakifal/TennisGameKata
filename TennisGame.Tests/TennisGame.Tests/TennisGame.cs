@@ -12,7 +12,7 @@ namespace TennisGame.Tests
         {
             var lookupDictionary = new Dictionary<int, string>()
             {
-                {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}
+                {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}, {3, "Forty"}
             };
 
             if(_firstPlayerScore > 0)
