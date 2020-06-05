@@ -5,7 +5,7 @@ namespace TennisGame.Tests
     [TestClass]
     public class TennisGameScoreTests
     {
-        protected internal TennisGame _tennisGame = new TennisGame("Mo", "James");
+        TennisGame _tennisGame = new TennisGame("Mo", "James");
 
         [TestMethod]
         public void TennisGame_Returns_Love_All()
@@ -32,14 +32,6 @@ namespace TennisGame.Tests
             ScoreShouldbe("Thirty Love");
         }
 
-        private void GiveFirstPlayerScore(int times)
-        {
-            for (int i = 0; i < times; i++)
-            {
-                _tennisGame.FirstPlayerScore();
-            }
-        }
-
         [TestMethod]
         public void TennisGame_Returns_Forty_Love()
         {
@@ -52,14 +44,6 @@ namespace TennisGame.Tests
         {
             GiveSecondPlayerScore(1);
             ScoreShouldbe("Love Fifteen");
-        }
-
-        private void GiveSecondPlayerScore(int times)
-        {
-            for (int i = 0; i < times; i++)
-            {
-                _tennisGame.SecondPlayerScore();
-            }
         }
 
         [TestMethod]
@@ -131,6 +115,22 @@ namespace TennisGame.Tests
             GiveFirstPlayerScore(3);
             GiveSecondPlayerScore(5);
             ScoreShouldbe("James Win");
+        }
+
+        private void GiveFirstPlayerScore(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                _tennisGame.FirstPlayerScore();
+            }
+        }
+
+        private void GiveSecondPlayerScore(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                _tennisGame.SecondPlayerScore();
+            }
         }
     }
 }
