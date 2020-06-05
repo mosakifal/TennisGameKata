@@ -22,7 +22,15 @@ namespace TennisGame.Tests
         public void TennisGame_Returns_Fifteen_Love()
         {
             _tennisGame.FirstPlayerScore();
-            Assert.AreEqual("Fiften Love", _tennisGame.Score());
+            ScoreShouldbe("Fifteen Love");
+        }
+
+        [TestMethod]
+        public void TennisGame_Returns_Thirty_Love()
+        {
+            _tennisGame.FirstPlayerScore();
+            _tennisGame.FirstPlayerScore();
+            ScoreShouldbe("Thirty Love");
         }
     }
 }

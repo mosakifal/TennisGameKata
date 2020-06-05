@@ -10,10 +10,16 @@ namespace TennisGame.Tests
 
         public string Score()
         {
-            if(_firstPlayerScore == 1)
+            var lookupDictionary = new Dictionary<int, string>()
             {
-                return "Fiften Love";
+                {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}
+            };
+
+            if(_firstPlayerScore > 0)
+            {
+                return $"{lookupDictionary[_firstPlayerScore]} Love";
             }
+
             return "Love All";
         }
 
