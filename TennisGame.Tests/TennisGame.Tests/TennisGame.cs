@@ -39,6 +39,14 @@ namespace TennisGame.Tests
                             return $"{_secondPlayer} Adv";
                         }                                                          
                     }
+                    if (_firstPlayerScore > _secondPlayerScore)
+                    {
+                        return $"{_firstPlayer} Win";
+                    }
+                    else
+                    {
+                        return $"{_secondPlayer} Win";
+                    }
                 }          
                 return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
             }
