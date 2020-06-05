@@ -20,7 +20,7 @@ namespace TennisGame.Tests
             {
                 return $"{_lookupDictionary[_firstPlayerScore]} {_lookupDictionary[_secondPlayerScore]}";
             }
-            return "Love All";
+            return $"{_lookupDictionary[_firstPlayerScore]} All";
         }
 
         public void FirstPlayerScore()
