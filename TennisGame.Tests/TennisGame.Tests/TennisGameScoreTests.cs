@@ -6,7 +6,7 @@ namespace TennisGame.Tests
     [TestClass]
     public class TennisGameScoreTests
     {
-        protected internal TennisGame _tennisGame = new TennisGame();
+        protected internal TennisGame _tennisGame = new TennisGame("Mo", "James");
 
         [TestMethod]
         public void TennisGame_Returns_Love_All()
@@ -92,6 +92,14 @@ namespace TennisGame.Tests
             GiveFirstPlayerScore(3);
             GiveSecondPlayerScore(3);
             ScoreShouldbe("Deuce");
+        }
+
+        [TestMethod]
+        public void TennisGame_Returns_FirstPlayer_Adv()
+        {
+            GiveFirstPlayerScore(4);
+            GiveSecondPlayerScore(3);
+            ScoreShouldbe("Mo Adv");
         }
     }
 }
