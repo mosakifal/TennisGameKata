@@ -10,7 +10,7 @@ namespace TennisGame
         private string _firstPlayer;
         private string _secondPlayer;
 
-        protected internal Dictionary<int, string> _lookupDictionary = new Dictionary<int, string>()
+        private Dictionary<int, string> _lookupDictionary = new Dictionary<int, string>()
         {
             {0, "Love" }, {1, "Fifteen"}, {2, "Thirty"}, {3, "Forty"}
         };
