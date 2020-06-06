@@ -111,7 +111,6 @@ C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\TennisGame.Tests.runtimeconfig.dev.json
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\TennisGame.Tests.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\TennisGame.Tests.pdb
-C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
@@ -122,7 +121,6 @@ C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\testhost.dll
-C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Moq.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame.Tests\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

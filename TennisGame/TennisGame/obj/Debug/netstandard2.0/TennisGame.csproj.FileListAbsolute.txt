@@ -13,3 +13,4 @@ C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netst
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.AssemblyInfo.cs
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.dll
 C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.pdb
+C:\Users\mosak\source\repos\TennisGameKata\TennisGame\TennisGame\obj\Debug\netstandard2.0\TennisGame.csprojAssemblyReference.cache
