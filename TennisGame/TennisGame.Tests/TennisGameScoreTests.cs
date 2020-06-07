@@ -54,6 +54,13 @@ namespace TennisGame.Tests
         }
 
         [TestMethod]
+        public void TennisGame_Returns_Love_Forty()
+        {
+            GiveSecondPlayerScore(3);
+            ScoreShouldbe("Love Forty");
+        }
+
+        [TestMethod]
         public void TennisGame_Returns_Fifteen_All()
         {
             GiveFirstPlayerScore(1);
